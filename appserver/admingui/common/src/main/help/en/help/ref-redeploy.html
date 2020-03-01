@@ -33,17 +33,17 @@
 <p>The archive is in a file that resides on or is accessible from the client machine.</p>
 <p>The client machine is the host on which you are viewing the Administration Console through a browser.</p>
 </dd>
-<dt>Local Packaged File or Directory That Is Accessible From the GlassFish Server</dt>
+<dt>Local Packaged File or Directory That Is Accessible From the Eclipse GlassFish</dt>
 <dd>
 <p>The archive is a file that resides on the server machine, or is an unpackaged application in an exploded directory.</p>
-<p>The server machine is the host that is running the GlassFish Server domain administration server.</p>
+<p>The server machine is the host that is running the Eclipse GlassFish domain administration server.</p>
 </dd>
 </dl>
 </dd>
 <dt>Application Name</dt>
 <dd>
 <p>Read-only field displaying the name of the application that you are redeploying.</p>
-<p>The name can include an optional version identifier, which follows the name and is separated from the name by a colon (<code>:</code>). For more information about module and application versions, see the <a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSDPG00324"><i>Module and Application Versions</i> in <i>Oracle GlassFish Server Application Deployment Guide</i></a>.</p>
+<p>The name can include an optional version identifier, which follows the name and is separated from the name by a colon (<code>:</code>). For more information about module and application versions, see the <a href="https://eclipse-ee4j.github.io/glassfish/docs/SNAPSHOT/application-deployment-guide/toc.html"><i>Module and Application Versions</i> in <i>Eclipse GlassFish Application Deployment Guide</i></a>.</p>
 </dd>
 <dt>Availability</dt>
 <dd>
@@ -71,7 +71,7 @@
 <p>For web applications, this feature is applicable only if in the <code>glassfish-web-app.xml</code> file the <code>persistence-type</code> attribute of the <code>session-manager</code> element is <code>file</code>.</p>
 <p>For stateful session bean instances, the persistence type without high availability is set in the server (the SFSB Persistence Type option) and must be set to <code>file</code>, which is the default and recommended value.</p>
 <p>If any active web session, SFSB instance, or EJB timer fails to be preserved or restored, <i>none</i> of these will be available when the redeployment is complete. However, the redeployment continues and a warning is logged.</p>
-<p>To preserve active state data, GlassFish Server serializes the data and saves it in memory. To restore the data, the class loader of the newly redeployed application deserializes the data that was previously saved.</p>
+<p>To preserve active state data, Eclipse GlassFish serializes the data and saves it in memory. To restore the data, the class loader of the newly redeployed application deserializes the data that was previously saved.</p>
 </dd>
 <dt>Preserve Application Scoped Resources</dt>
 <dd>
@@ -137,16 +137,16 @@
 <h5>Related asadmin Commands</h5>
 <ul>
 <li>
-<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00114"><code>deploy</code>(1)</a></p>
+<p><a href="https://eclipse-ee4j.github.io/glassfish/docs/latest/reference-manual/deploy.html#GSRFM00114"><code>deploy</code>(1)</a></p>
 </li>
 <li>
-<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00217"><code>redeploy</code>(1)</a></p>
+<p><a href="https://eclipse-ee4j.github.io/glassfish/docs/latest/reference-manual/redeploy.html#GSRFM00217"><code>redeploy</code>(1)</a></p>
 </li>
 <li>
-<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00148"><code>list-applications</code>(1)</a></p>
+<p><a href="https://eclipse-ee4j.github.io/glassfish/docs/latest/reference-manual/list-applications.html#GSRFM00148"><code>list-applications</code>(1)</a></p>
 </li>
 <li>
-<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00185"><code>list-modules</code>(1)</a></p>
+<p><a href="https://eclipse-ee4j.github.io/glassfish/docs/latest/reference-manual/list-modules.html#GSRFM00185"><code>list-modules</code>(1)</a></p>
 </li>
 </ul>
 

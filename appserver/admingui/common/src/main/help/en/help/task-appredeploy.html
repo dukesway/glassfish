@@ -31,7 +31,7 @@
 </li>
 <li>
 <p>In the Deployed Applications table, click Redeploy in the row for the application that you are redeploying.</p>
-<p>The application name can include an optional version identifier, which follows the name and is separated from the name by a colon (<code>:</code>). For more information about module and application versions, see the <a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSDPG00324"><i>Module and Application Versions</i> in <i>Oracle GlassFish Server Application Deployment Guide</i></a>.</p>
+<p>The application name can include an optional version identifier, which follows the name and is separated from the name by a colon (<code>:</code>). For more information about module and application versions, see the <a href="https://eclipse-ee4j.github.io/glassfish/docs/latest/application-deployment-guide/toc.html"><i>Module and Application Versions</i> in <i>Eclipse GlassFish Application Deployment Guide</i></a>.</p>
 <p>The Redeploy Applications or Modules page opens.</p>
 </li>
 <li>
@@ -43,7 +43,7 @@
 <p>Click Browse to browse to the file, or type the full path to the file.</p>
 </li>
 <li>
-<p>If the application is an archive file that resides on the server machine, or is an unpackaged application from an exploded directory, select the option Local Packaged File or Directory That Is Accessible From the GlassFish Server.</p>
+<p>If the application is an archive file that resides on the server machine, or is an unpackaged application from an exploded directory, select the option Local Packaged File or Directory That Is Accessible From the Eclipse GlassFish.</p>
 <p>The server machine is the host that is running the domain administration server (DAS).</p>
 <p>Click Browse Files to browse to a file, or Browse Folders to browse to a directory. Alternatively, type the full path name to the file or directory. Deploying from an exploded directory is for advanced developers and is not recommended for production environments.</p>
 </li>
@@ -74,7 +74,7 @@
 <p>For web applications, this feature is applicable only if in the <code>glassfish-web-app.xml</code> file the <code>persistence-type</code> attribute of the <code>session-manager</code> element is <code>file</code>.</p>
 <p>For stateful session bean instances, the persistence type without high availability is set in the server (the SFSB Persistence Type option) and must be set to <code>file</code>, which is the default and recommended value.</p>
 <p>If any active web session, SFSB instance, or EJB timer fails to be preserved or restored, <i>none</i> of these will be available when the redeployment is complete. However, the redeployment continues and a warning is logged.</p>
-<p>To preserve active state data, GlassFish Server serializes the data and saves it in memory. To restore the data, the class loader of the newly redeployed application deserializes the data that was previously saved.</p>
+<p>To preserve active state data, Eclipse GlassFish serializes the data and saves it in memory. To restore the data, the class loader of the newly redeployed application deserializes the data that was previously saved.</p>
 </li>
 <li>
 <p>Select the Preserve Application Scoped Resources checkbox to preserve any application-scoped resources and restore them during redeployment.</p>
