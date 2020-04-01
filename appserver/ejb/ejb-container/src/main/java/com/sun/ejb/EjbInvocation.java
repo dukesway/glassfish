@@ -693,10 +693,6 @@ public class EjbInvocation
         return webServiceMethod;
     }
 
-    public void setMessageContext(MessageContext msgContext) {
-       messageContext = msgContext;
-    }
-
    public ResourceHandler getResourceHandler() {
        ResourceHandler rh = super.getResourceHandler();
        if (rh == null) {

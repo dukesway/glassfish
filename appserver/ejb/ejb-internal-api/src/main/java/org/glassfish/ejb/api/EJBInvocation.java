@@ -19,7 +19,6 @@ package org.glassfish.ejb.api;
 
 import java.lang.reflect.Method;
 import jakarta.ejb.EJBContext;
-import javax.xml.rpc.handler.MessageContext;
 
 /**
  * This interface provides access to the exported portions of the
@@ -87,12 +86,6 @@ public interface EJBInvocation {
      * @param tie an instance of com.sun.xml.rpc.spi.runtime.Tie
      */
     public void setWebServiceTie(Object tie);
-
-
-    /**
-     * Used for setting JAXRPC message context.
-     */
-    public void setMessageContext(MessageContext msgContext);
 
     /**
      * @return instance of com.sun.xml.rpc.spi.runtime.Tie
