@@ -16,11 +16,11 @@
 
 package com.sun.connector.jaxr;
 
-import javax.resource.NotSupportedException;
-import javax.resource.ResourceException;
-import javax.resource.spi.EISSystemException;
-import javax.resource.spi.IllegalStateException;
-import javax.resource.spi.ManagedConnectionMetaData;
+import jakarta.resource.NotSupportedException;
+import jakarta.resource.ResourceException;
+import jakarta.resource.spi.EISSystemException;
+import jakarta.resource.spi.IllegalStateException;
+import jakarta.resource.spi.ManagedConnectionMetaData;
 
 public class MetaDataImpl
   implements ManagedConnectionMetaData

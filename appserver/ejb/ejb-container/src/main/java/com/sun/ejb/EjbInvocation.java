@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0, which is available at
@@ -25,13 +25,12 @@ import org.glassfish.api.invocation.ComponentInvocation;
 import org.glassfish.api.invocation.ResourceHandler;
 import com.sun.enterprise.transaction.spi.TransactionOperationsManager;
 
-import javax.ejb.EJBContext;
-import javax.ejb.Timer;
+import jakarta.ejb.EJBContext;
+import jakarta.ejb.Timer;
 import javax.interceptor.InvocationContext;
 import com.sun.ejb.containers.interceptors.InterceptorUtil;
 import javax.naming.NameNotFoundException;
-import javax.transaction.Transaction;
-import javax.xml.rpc.handler.MessageContext;
+import jakarta.transaction.Transaction;
 import javax.xml.soap.SOAPMessage;
 import javax.xml.ws.WebServiceContext;
 import java.lang.reflect.Constructor;
@@ -198,12 +197,6 @@ public class EjbInvocation
      */
     private ClassLoader originalContextClassLoader;
     
-    /**
-     * Used for web service invocations to hold SOAP message context.
-     * EJBs can access message context through SessionContext.
-     */
-	/* HARRY: JACC Related Changes */
-     public MessageContext messageContext;
     
     /**
      * Used for JACC PolicyContextHandlers. The handler can query the container

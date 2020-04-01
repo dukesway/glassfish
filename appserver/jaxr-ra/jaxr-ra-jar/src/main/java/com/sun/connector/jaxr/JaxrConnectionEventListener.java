@@ -19,9 +19,9 @@ package com.sun.connector.jaxr;
 import java.util.ResourceBundle;
 import java.util.Vector;
 import java.util.logging.Logger;
-import javax.resource.spi.ConnectionEvent;
-import javax.resource.spi.ConnectionEventListener;
-import javax.resource.spi.ManagedConnection;
+import jakarta.resource.spi.ConnectionEvent;
+import jakarta.resource.spi.ConnectionEventListener;
+import jakarta.resource.spi.ManagedConnection;
 import org.glassfish.logging.annotation.LogMessagesResourceBundle;
 
 public class JaxrConnectionEventListener

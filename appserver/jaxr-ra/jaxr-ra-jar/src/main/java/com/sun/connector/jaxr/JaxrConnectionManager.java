@@ -18,11 +18,11 @@ package com.sun.connector.jaxr;
 
 import java.io.Serializable;
 import java.util.logging.Logger;
-import javax.resource.ResourceException;
-import javax.resource.spi.ConnectionManager;
-import javax.resource.spi.ConnectionRequestInfo;
-import javax.resource.spi.ManagedConnection;
-import javax.resource.spi.ManagedConnectionFactory;
+import jakarta.resource.ResourceException;
+import jakarta.resource.spi.ConnectionManager;
+import jakarta.resource.spi.ConnectionRequestInfo;
+import jakarta.resource.spi.ManagedConnection;
+import jakarta.resource.spi.ManagedConnectionFactory;
 import org.glassfish.logging.annotation.LogMessagesResourceBundle;
 
 public class JaxrConnectionManager

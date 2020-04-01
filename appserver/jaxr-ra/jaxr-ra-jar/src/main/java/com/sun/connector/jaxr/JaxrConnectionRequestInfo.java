@@ -17,7 +17,7 @@
 package com.sun.connector.jaxr;
 
 import java.util.Properties;
-import javax.resource.spi.ConnectionRequestInfo;
+import jakarta.resource.spi.ConnectionRequestInfo;
 
 public class JaxrConnectionRequestInfo
   implements ConnectionRequestInfo
