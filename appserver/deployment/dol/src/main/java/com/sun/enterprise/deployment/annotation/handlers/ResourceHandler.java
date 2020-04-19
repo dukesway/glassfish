@@ -32,14 +32,11 @@ import javax.inject.Provider;
 import static com.sun.enterprise.util.StringUtils.ok;
 
 import javax.annotation.Resource;
-import java.lang.annotation.Annotation;
 import java.lang.annotation.ElementType;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.logging.Level;
