@@ -16,7 +16,6 @@
 
 package com.sun.ejb;
 
-//XXX: import javax.xml.rpc.handler.MessageContext;
 /* HARRY : JACC Changes */
 
 import com.sun.ejb.containers.*;
@@ -196,8 +195,7 @@ public class EjbInvocation
      * loader that was active before message delivery began.
      */
     private ClassLoader originalContextClassLoader;
-    
-    
+
     /**
      * Used for JACC PolicyContextHandlers. The handler can query the container
      * back for parameters on the ejb. This is set during the method invocation
@@ -241,10 +239,6 @@ public class EjbInvocation
 
     private boolean wasCancelCalled = false;
 
-    /**
-     * Used by container within JAXRPC handler processing code.
-     */
-    private Object webServiceTie;
     private Method webServiceMethod;
 
     // True if lock is currently held for this invocation
@@ -676,14 +670,6 @@ public class EjbInvocation
    public boolean isCallerInRole(String role) {
        return getEjbSecurityManager().isCallerInRole(role);
    } 
-
-    public void setWebServiceTie(Object tie) {
-        webServiceTie = tie;
-    }
-
-    public Object getWebServiceTie() {
-        return webServiceTie;
-    }
 
     public void setWebServiceMethod(Method method) {
         webServiceMethod = method;

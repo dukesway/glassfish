@@ -20,6 +20,7 @@ package org.glassfish.ejb.api;
 import java.lang.reflect.Method;
 import jakarta.ejb.EJBContext;
 
+
 /**
  * This interface provides access to the exported portions of the
  * ejb invocation object.  
@@ -80,17 +81,6 @@ public interface EJBInvocation {
     * @return true if the SecurityManager reports that the caller is in role
     */
    public boolean isCallerInRole(String role);
-
-    /**
-     * Used by JAXRPC pre/postHandler classes
-     * @param tie an instance of com.sun.xml.rpc.spi.runtime.Tie
-     */
-    public void setWebServiceTie(Object tie);
-
-    /**
-     * @return instance of com.sun.xml.rpc.spi.runtime.Tie
-     */
-    public Object getWebServiceTie();
 
     public void setWebServiceMethod(Method method);
     public Method getWebServiceMethod();

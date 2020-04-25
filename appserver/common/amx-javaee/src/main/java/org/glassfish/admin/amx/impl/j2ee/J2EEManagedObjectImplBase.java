@@ -22,8 +22,6 @@ import java.util.Map;
 import java.util.Set;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
-import javax.management.j2ee.Management;
-import javax.management.j2ee.ManagementHome;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.rmi.PortableRemoteObject;
@@ -253,20 +251,6 @@ public abstract class J2EEManagedObjectImplBase extends AMXImplBase {
         
         final Set<String> types = SetUtil.newStringSet(args);
         return getChildrenAsStrings(types);
-    }
-
-    public final Management getMEJB() {
-        Management mejb = null;
-        try {
-            final Context ic = new InitialContext();
-            final String ejbName = System.getProperty("mejb.name", "ejb/mgmt/MEJB");
-            final Object objref = ic.lookup(ejbName);
-            final ManagementHome home = (ManagementHome) PortableRemoteObject.narrow(objref, ManagementHome.class);
-            mejb = home.create();
-        } catch (Exception ex) {
-            throw new RuntimeException("Can't find MEJB", ex);
-        }
-        return mejb;
     }
 
 }
