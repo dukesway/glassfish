@@ -64,7 +64,7 @@
                           <fileSeparator>/</fileSeparator>
                           <prefix>../../modules</prefix>
                           <stripVersion>true</stripVersion>
-                          <excludeArtifactIds>jsftemplating, javax.json, jakarta.json-api</excludeArtifactIds>
+                          <excludeArtifactIds>jsftemplating, jakarta.json, jakarta.json-api</excludeArtifactIds>
                       </configuration>
                   </execution>
               </executions>
@@ -657,13 +657,13 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish.main.resources</groupId>
-            <artifactId>javamail-connector</artifactId>
+            <artifactId>mail-connector</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.glassfish.main.resources</groupId>
-            <artifactId>javamail-runtime</artifactId>
+            <artifactId>mail-runtime</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>
         </dependency>

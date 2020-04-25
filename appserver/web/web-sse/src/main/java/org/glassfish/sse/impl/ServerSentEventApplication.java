@@ -18,9 +18,9 @@ package org.glassfish.sse.impl;
 
 import org.glassfish.sse.api.ServerSentEventHandler;
 
-import jakarta.enterprise.context.spi.CreationalContext;
-import javax.servlet.AsyncContext;
-import javax.servlet.http.HttpServletRequest;
+import javax.enterprise.context.spi.CreationalContext;
+import jakarta.servlet.AsyncContext;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 

@@ -621,6 +621,16 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
             <exclusions>
@@ -771,7 +781,7 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish.main.resources</groupId>
-            <artifactId>javamail-connector</artifactId>
+            <artifactId>mail-connector</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
@@ -782,7 +792,7 @@
         </dependency>
         <dependency>
             <groupId>org.glassfish.main.resources</groupId>
-            <artifactId>javamail-runtime</artifactId>
+            <artifactId>mail-runtime</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
