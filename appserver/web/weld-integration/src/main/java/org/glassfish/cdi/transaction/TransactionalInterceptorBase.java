@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2012, 2020jakarta Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0, which is available at
@@ -29,7 +29,7 @@ import org.glassfish.logging.annotation.LogMessagesResourceBundle;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.interceptor.InvocationContext;
+import jakarta.interceptor.InvocationContext;
 import javax.naming.InitialContext;
 import javax.naming.NameNotFoundException;
 import javax.naming.NamingException;

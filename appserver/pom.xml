@@ -41,30 +41,19 @@
     <properties>
         <jms-api.version>3.0.0-RC1</jms-api.version>
         <jsp-api.version>3.0.0-M1</jsp-api.version>
-        <jsp-impl.version>3.0.0-M1</jsp-impl.version>
-        <jstl-impl.version>2.0.0-RC1</jstl-impl.version>
+        <jsp-impl.version>3.0.0-RC1</jsp-impl.version>
+        <jstl-impl.version>2.0.0-SNAPSHOT</jstl-impl.version>
         <jstl-api.version>2.0.0-RC1</jstl-api.version>
-        <mojarra.version>2.3.9</mojarra.version>
+        <mojarra.version>3.0.0-RC1</mojarra.version>
         <jsf-ext.version>0.2</jsf-ext.version>
         <woodstock.version>4.0.2.16</woodstock.version>
-<<<<<<< HEAD
         <javax.ejb-api.version>4.0.0-RC1</javax.ejb-api.version>
         <jakarta.interceptor-api.version>2.0.0-RC2</jakarta.interceptor-api.version>
-        <jakarta.xml.rpc-api.version>1.1.3</jakarta.xml.rpc-api.version>
         <javax.transaction-api.version>2.0.0-RC1</javax.transaction-api.version>
         <jakarta.faces-api.version>3.0.0-RC1</jakarta.faces-api.version>
         <cdi-api.version>3.0.0-M2</cdi-api.version>
         <javax.inject.version>2.0.0-RC3</javax.inject.version>
         <jakarta.resource-api.version>2.0.0-RC1</jakarta.resource-api.version>
-=======
-        <javax.ejb-api.version>3.2.6</javax.ejb-api.version>
-        <jakarta.interceptor-api.version>1.2.5</jakarta.interceptor-api.version>
-        <javax.transaction-api.version>1.3.3</javax.transaction-api.version>
-        <jakarta.faces-api.version>2.3.1</jakarta.faces-api.version>
-        <cdi-api.version>2.0</cdi-api.version>
-        <javax.inject.version>1</javax.inject.version>
-        <jakarta.resource-api.version>1.7.4</jakarta.resource-api.version>
->>>>>>> master
         <javax.enterprise.deploy-api.version>1.7.1</javax.enterprise.deploy-api.version>
         <jakarta.authorization-api.version>2.0.0-RC1</jakarta.authorization-api.version>
         <jakarta.security.auth.message-api.version>2.0.0-RC1</jakarta.security.auth.message-api.version>
@@ -93,7 +82,7 @@
         <woodstox.version>5.1.0</woodstox.version>
         <jaxb.version>2.3.2</jaxb.version>
         <stax2-api.version>4.1</stax2-api.version>
-        <eclipselink.version>2.7.4</eclipselink.version>
+        <eclipselink.version>3.0.0-RC1</eclipselink.version>
         <jakarta-persistence-api.version>3.0.0-RC2</jakarta-persistence-api.version>
         <dbschema.version>6.7</dbschema.version>
         <schema2beans.version>6.7</schema2beans.version>
@@ -108,7 +97,7 @@
         <jsonp-jaxrs.version>2.0.0-RC2</jsonp-jaxrs.version>
         <json.bind-api.version>2.0.0-RC1</json.bind-api.version>
 
-        <yasson.version>1.0.3</yasson.version>
+        <yasson.version>2.0.0-M1</yasson.version>
         <concurrent-api.version>2.0.0-RC1</concurrent-api.version>
         <concurrent.version>2.0.0-RC1</concurrent.version>
         <jakarta.batch-api.version>1.0.2</jakarta.batch-api.version>
@@ -544,6 +533,11 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>jakarta.faces</artifactId>
                 <version>${mojarra.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${jakarta-persistence-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.persistence</groupId>
